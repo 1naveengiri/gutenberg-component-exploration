@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "create-block/gutenberg-component-exploration",
+	"version": "0.1.0",
+	"title": "Gutenberg Component Exploration",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Example static block scaffolded with Create Block tool.",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"content":{
+			"source": "html",
+			"type": "string",
+			"selector": "p"
+		}
+	},
+	"textdomain": "gutenberg-component-exploration",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
