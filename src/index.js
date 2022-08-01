@@ -4,7 +4,8 @@
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
 import { registerBlockType } from '@wordpress/blocks';
-
+//  Import CTA block settings
+import { ctametadata, name, settings } from './blocks/buddy-cta';
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
  * All files containing `style` keyword are bundled together. The code used
@@ -36,3 +37,7 @@ registerBlockType( metadata.name, {
 	 */
 	save,
 } );
+/**
+ * Register Buddy CTA block.
+ */
+ registerBlockType({ name, ...ctametadata }, settings);
